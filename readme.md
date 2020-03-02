@@ -3,7 +3,7 @@
 
 - [Goals](#goals)
 - [Description](#description)
-- [Measuring Progress](#measuring progess)
+- [Measuring_Progress](#measuring_progess)
 - [Acknowledgements](#acknowledgements)
 
 ## Goals
@@ -18,7 +18,7 @@ This project makes use of DC's Rodent Inspection and Treatment in Last 30 Days d
 
 Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. 
 
-## Measuring Progress
+## Measuring_Progress
 
 To measure progress, we should track: 
 - Site visits and traffic data.
