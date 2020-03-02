@@ -8,7 +8,7 @@
 
 ## Goals
 
-- Build a database to associate map data and rodent calls in D.C
+- Build a database of rodent inspection and treatment in D.C. 
 - Produce a heat map, using some opensource map library
 - Integrate tools to take screenshots, track past events and hold authorities accountable. 
 
