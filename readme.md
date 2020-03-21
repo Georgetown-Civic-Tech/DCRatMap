@@ -31,7 +31,7 @@ To measure progress, we should track:
 
 Georgetown Civic Tech would like to thank the following individuals. 
 
-DC Rat Map Team Members: 
+### DC Rat Map Team Members: 
 - Paul-Emmanuel Courtines
 
 Georgetown Civic Tech Board Members: 
