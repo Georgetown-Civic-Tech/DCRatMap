@@ -3,7 +3,7 @@
 
 - [Goals](#goals)
 - [Description](#description)
-- [Measuring_Progress](#measuring_progess)
+- [Measuring_Progress](#measuring progess)
 - [Acknowledgements](#acknowledgements)
 
 ## Goals
@@ -16,9 +16,11 @@
 
 This project makes use of DC's Rodent Inspection and Treatment in Last 30 Days dataset, which can be found here: https://opendata.dc.gov/datasets/rodent-inspection-and-treatment-in-last-30-days. 
 
+It creates a map in R (https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html) and assigns points to geospatial coordinates in the earlier saved datasets. 
+
 Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. 
 
-## Measuring_Progress
+## Measuring Progress
 
 To measure progress, we should track: 
 - Site visits and traffic data.
@@ -30,14 +32,8 @@ To measure progress, we should track:
 Georgetown Civic Tech would like to thank the following individuals. 
 
 DC Rat Map Team Members: 
-- Person 1
-- Person 2
-- Person 3
+- Paul-Emmanuel Courtines
 
 Georgetown Civic Tech Board Members: 
 - Person 1 
 - Person 2 
-
-Other Ressources and People: 
-- here and there 
-- voila 
