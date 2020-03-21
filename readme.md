@@ -35,5 +35,5 @@ Georgetown Civic Tech would like to thank the following individuals.
 - Paul-Emmanuel Courtines
 
 ### Georgetown Civic Tech Board Members: 
-- Person 1 
-- Person 2 
+- Paul-Emmanuel Courtines
+- Abhi Saravanan
