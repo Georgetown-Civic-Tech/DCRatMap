@@ -3,7 +3,7 @@
 
 - [Goals](#goals)
 - [Description](#description)
-- [Measuring Progress](#measuring #progress)
+- [Measuring_Progress](#measuring_progress)
 - [Acknowledgements](#acknowledgements)
 
 ## Goals
@@ -20,7 +20,7 @@ It creates a map in R (https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html) a
 
 Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. 
 
-## Measuring Progress
+## Measuring_Progress
 
 To measure progress, we should track: 
 - Site visits and traffic data.
