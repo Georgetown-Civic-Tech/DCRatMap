@@ -18,6 +18,8 @@ This project makes use of DC's Rodent Inspection and Treatment in Last 30 Days d
 
 It creates a map in R (https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html) and assigns points to geospatial coordinates in the earlier saved datasets. 
 
+The site also has a suite of tools to accompany the dataset, to faciliate communication with local officials and encourage civic engagement around rodents. 
+
 Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. Currently, this is done by Paul-Emmanuel.
 
 ## Measuring_Progress
