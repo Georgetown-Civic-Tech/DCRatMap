@@ -3,7 +3,7 @@
 
 - [Goals](#goals)
 - [Description](#description)
-- [Measuring Progress](#measuring)
+- [Measuring Progress](#measuringprogress)
 - [Acknowledgements](#acknowledgements)
 
 ## Goals
