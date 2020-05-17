@@ -16,7 +16,7 @@
 
 This project makes use of DC's Rodent Inspection and Treatment in Last 30 Days dataset, which can be found here: https://opendata.dc.gov/datasets/rodent-inspection-and-treatment-in-last-30-days. 
 
-It creates a map in R (https://www.r-spatial.org/r/2018/10/25/ggplot2-sf.html) and assigns points to geospatial coordinates in the earlier saved datasets. 
+It creates a map using Mapbox (https://www.mapbox.com) and assigns points to geospatial coordinates in the earlier saved datasets. 
 
 The site also has a suite of tools to accompany the dataset, to faciliate communication with local officials and encourage civic engagement around rodents. 
 
