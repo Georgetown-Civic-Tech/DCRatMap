@@ -35,7 +35,6 @@ Georgetown Civic Tech would like to thank the following individuals.
 
 ### DC Rat Map Team Members: 
 - Paul-Emmanuel Courtines
-- Brandon Herren
 
 ### Georgetown Civic Tech Board Members: 
 - Paul-Emmanuel Courtines
