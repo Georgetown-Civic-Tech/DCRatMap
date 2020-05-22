@@ -1,4 +1,4 @@
-# Georgetown Civic Tech: DC Rat Map
+# DC Rat Map
 ## Version 0.1
 
 - [Goals](#goals)
