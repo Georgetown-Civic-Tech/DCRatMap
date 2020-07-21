@@ -12,6 +12,10 @@
 - Produce a map of rodent events, using some opensource/public/free map library
 - Integrate tools to take screenshots, track past events and hold authorities accountable. 
 
+## Application View
+
+![Image of Rat Map](paul1776/DCRatMap/DCRatMap_Photo1.png)
+
 ## Description 
 
 This project makes use of DC's Rodent Inspection and Treatment in Last 30 Days dataset, which can be found here: https://opendata.dc.gov/datasets/rodent-inspection-and-treatment-in-last-30-days. 
