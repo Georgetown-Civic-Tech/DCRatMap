@@ -14,7 +14,7 @@
 
 ## Application View
 
-![Image of Rat Map](DCRatMap/DCRatMap_Photo1.png)
+![Image of Rat Map](DCRatMap_Photo1.png)
 
 ## Description 
 
