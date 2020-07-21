@@ -12,7 +12,7 @@
 - Produce a map of rodent events, using some opensource/public/free map library.
 - Allow for full map control with zoom, 360 control. 
 
-## Appplication Vew
+## Appplication View
 
 ![Image of Rat Map](DCRatMap_Photo1.png)
 ![Image of Rat Map](DCRatMap_Photo3.png)
