@@ -1,5 +1,5 @@
 # DC Rat Map
-## Version 0.1
+## Version 1.0
 
 - [Goals](#goals)
 - [Description](#description)
@@ -9,7 +9,7 @@
 ## Goals
 
 - Build a database of rodent inspection and treatment in D.C. 
-- Produce a heat map, using some opensource/public/free map library
+- Produce a map of rodent events, using some opensource/public/free map library
 - Integrate tools to take screenshots, track past events and hold authorities accountable. 
 
 ## Description 
