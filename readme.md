@@ -15,7 +15,6 @@
 ## Appplication Vew
 
 ![Image of Rat Map](DCRatMap_Photo1.png)
-![Image of Rat Map](DCRatMap_Photo2.png)
 ![Image of Rat Map](DCRatMap_Photo3.png)
 
 ## Description 
