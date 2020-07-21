@@ -18,6 +18,15 @@
         top: 0;
         bottom: 0;
         width: 100%;
+        
+      }
+      .marker {
+        background-image: url('rat-logo.png');
+        background-size: cover;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
       }
     </style>
 </head>
@@ -39,31 +48,6841 @@ var map = new mapboxgl.Map({
 
 // code from the next step will go here!
 var geojson = {
-  type: 'FeatureCollection',
-  features: [{
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [-77.032, 38.913]
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04439135,38.92460274 ]
     },
-    properties: {
-      title: 'Mapbox',
-      description: 'Washington, D.C.'
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T09:06:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2721 ADAMS MILL ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
     }
   },
   {
-    type: 'Feature',
-    geometry: {
-      type: 'Point',
-      coordinates: [-122.414, 37.776]
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07430129,38.93708532 ]
     },
-    properties: {
-      title: 'Mapbox',
-      description: 'San Francisco, California'
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3800 - 3814 BLOCK OF PORTER STREET NW",
+    "ZIPCODE":20016,
+    "WARD":"3"
     }
-  }]
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02314991,38.95166296 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T11:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5024 7TH PLACE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00463573,38.882758 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T09:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"138 DUDDINGTON PLACE SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03279779,38.96338734 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-22T00:02:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1371 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97831996,38.88702164 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T12:25:24.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1816 BAY STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01461061,38.94344978 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T11:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"211 VARNUM STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00407941,38.91716968 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T13:23:33.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"168 U STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03195559,38.91447 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1800 - 1823 BLOCK OF 14TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"NULL"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99315757,38.92727698 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T08:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"915 HAMLIN STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98436208,38.8669282 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:08:54.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1408 MINNESOTA AVENUE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02732096,38.91165265 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T11:00:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1616 11TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97521517,38.89999524 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T11:39:01.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1931 H STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02679648,38.92890471 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:56:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1011 IRVING STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99513997,38.9584681 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T15:26:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5812 8TH STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04190848,38.90813732 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T12:54:08.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1312 18TH STREET NW",
+    "ZIPCODE":20036,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.96842409,38.87483535 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T09:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2712 MINNESOTA AVENUE SE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02577995,38.91574116 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1901 VERMONT AVENUE NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04322671,38.92306897 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T09:03:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1814 ADAMS MILL ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04688413,38.92282181 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:55:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1971 BILTMORE STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99976587,38.96104862 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:28:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"539 OGLETHORPE STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01474241,38.94991005 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"214 EMERSON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01916364,38.91027428 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:56:09.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1516 5TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06350009,38.91028202 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3142 Q STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04266034,38.91760833 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1828 CALIFORNIA STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04125863,38.92478982 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1732 LANIER PLACE NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04351888,38.92299689 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T09:04:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1814 CALVERT STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02243416,38.90724545 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"700 - 799 BLOCK OF N STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"NULL"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02871053,38.93675796 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T13:13:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1044 QUEBEC PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04440863,38.9247684 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T09:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2727 ADAMS MILL ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02336738,38.91577815 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T14:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"809 T STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03831848,38.93185199 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T11:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3221 MOUNT PLEASANT STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.029425,38.92793937 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:54:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3007 13TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03043257,38.91541151 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T00:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1314 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9997338,38.96072234 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T13:46:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"524 RIGGS ROAD NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00119637,38.88618649 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T08:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"320 C STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0718459,38.91878646 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:42:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2202 HALL PLACE NW",
+    "ZIPCODE":20007,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98343268,38.88071561 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"706 15TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06314853,38.93852267 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:44:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3104 RODMAN STREET NW",
+    "ZIPCODE":20008,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07545408,38.96417815 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5532 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20015,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01831301,38.95805915 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T10:44:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"403 MISSOURI AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95480654,38.89477145 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T08:55:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"36TH STREET NE AND DIX STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95517652,38.89576317 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T09:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3451 BENNING ROAD NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01906551,38.94904526 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T08:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"450 DELAFIELD PLACE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07386876,38.936308 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T08:07:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3401 38TH STREET NW",
+    "ZIPCODE":20016,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03520588,38.93515064 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3536 CENTER STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00407941,38.91716968 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T12:00:17.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"168 U STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98410248,38.9201907 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T15:07:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1348 ADAMS STREET NE",
+    "ZIPCODE":20018,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00806378,38.91680158 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T11:39:04.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"23 U STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98101729,38.88445409 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"337 17TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99992221,38.96104628 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"533 OGLETHORPE STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0199245,38.92969503 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3112 WARDER STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01022977,38.91537683 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"32 T STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02205117,38.93600515 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T10:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"728 QUEBEC PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05334521,38.92821539 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T20:47:57.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2331 CATHEDRAL AVENUE NW",
+    "ZIPCODE":20008,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9548054,38.89529799 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T08:56:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"36TH STREET NE AND EADS STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02739806,38.90945513 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T10:10:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1426 11TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04110346,38.91469118 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T11:20:16.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1756 SWANN STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98870976,38.84443511 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1249 ALABAMA AVENUE SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01239632,38.91437282 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T12:20:07.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1806 1ST STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9587639,38.89373941 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T09:01:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3334 CLAY STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00615462,38.84086905 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T11:50:14.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"131 RALEIGH STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95456442,38.89520649 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T09:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"417 36TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01641838,38.94984208 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T11:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"314 EMERSON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98339193,38.90424818 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T07:40:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1425 STAPLES STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04401648,38.91364461 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T11:18:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1735 FRASER COURT NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03572679,38.92672951 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T09:06:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1504 COLUMBIA ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01145876,38.91427446 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T12:31:30.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"73 S STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04112771,38.9056716 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T10:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"M STREET NW AND CONNECTICUT AVENUE NW",
+    "ZIPCODE":20036,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01052148,38.90743892 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-19T10:15:32.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"29 N STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0207484,38.94154404 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"4120 NEW HAMPSHIRE AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06307437,38.90827988 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T11:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3146 1/2 O STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98995628,38.89909281 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:52:58.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1200 G STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03303607,38.96342447 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T10:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1385 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02523406,38.95021454 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"4911 9TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99724787,38.88445244 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T07:49:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"632 D STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9935374,38.87945868 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T08:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"900 1/2 I STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04214842,38.92044803 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T22:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1800 BELMONT ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02920261,38.96021567 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:36:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5817 COLORADO AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98302482,38.89564253 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:46:31.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1512 ISHERWOOD STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02162671,38.90708382 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:47:50.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1211 7TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02951352,38.93478432 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3605 13TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01594382,38.94126077 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"301 TAYLOR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03078769,38.91187582 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T10:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1300 - 1399 BLOCK OF CORCORAN STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03304127,38.94102567 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T13:43:24.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4102 14TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02646979,38.93956332 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T13:49:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"938 SHEPHERD STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02678118,38.94557168 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"4516 GEORGIA AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02417015,38.92428582 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"809 EUCLID STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02426777,38.9247826 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"750 FAIRMONT STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99049638,38.89641278 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:58:19.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"506 12TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03140013,38.94163148 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T11:45:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1350 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02727015,38.93887913 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T00:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"965 RANDOLPH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03135517,38.89501014 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T09:13:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1350 PENNSYLVANIA AVENUE NW",
+    "ZIPCODE":20004,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98588371,38.90927174 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1706 MONTELLO AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98885617,38.93959947 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:58:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1227 MICHIGAN AVENUE NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9587639,38.89373941 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3334 CLAY STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99668228,38.89009789 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:33:43.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"646 EAST CAPITOL STREET NE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01598699,38.95787193 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T10:48:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5601 3RD STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03533652,38.91204083 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T12:56:42.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1517 CORCORAN STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01777874,38.95819624 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T10:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"340 MADISON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98099743,38.88891386 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T07:47:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"33 17TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03993884,38.91998272 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T09:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2254 ONTARIO ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98405712,38.91983576 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T07:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1367 ADAMS STREET NE",
+    "ZIPCODE":20018,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98966913,38.88146799 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:32:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1216 G STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00256723,38.91386097 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T08:19:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"227 S STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02382428,38.95664962 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:40:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5507 8TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03047931,38.91900879 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1316 W STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99375832,38.90077089 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:34:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"800 - 899 BLOCK OF 9TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02617788,38.95470684 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T10:45:59.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5317 ILLINOIS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98227187,38.8547469 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2426 15TH PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00119637,38.88618649 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T09:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"320 C STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99809517,38.96079376 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-19T13:53:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"637 OGLETHORPE STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01499373,38.94198462 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T09:57:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"228 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02454883,38.90943694 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T10:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"912 P STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0580162,38.93585941 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3505 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20008,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01869111,38.9312661 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:11:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3228 PARK PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03180099,38.93367596 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:30:11.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1356 OAK STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03452557,38.95602304 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T23:53:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1410 KENNEDY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9765292,38.86971806 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1920 R STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05770252,38.93391477 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3318 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20008,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01930602,38.94943447 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T11:49:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"459 DELAFIELD PLACE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02325357,38.91577863 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"805 T STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01801751,38.9406334 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T09:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4018 ILLINOIS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9840338,38.89629245 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:53:58.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1420 E STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95456442,38.89520649 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T09:13:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"417 36TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02608787,38.95465074 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T10:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5313 ILLINOIS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07937942,38.94948874 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:43:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4000 BRANDYWINE STREET NW",
+    "ZIPCODE":20016,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.019466,38.90875804 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:59:04.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"509 O STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03304446,38.96434124 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T11:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"6103 14TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02423011,38.9242486 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"811 EUCLID STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95457273,38.89463653 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T09:04:57.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"337 36TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95457853,38.89459248 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T09:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"335 36TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01070122,38.90741594 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:50:42.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"35 N STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.91874282,38.89967413 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T13:28:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"714 57TH PLACE NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02432039,38.92420372 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"821 EUCLID STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97658374,38.90542981 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T07:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1845 M STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02626757,38.95484555 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T10:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5323 ILLINOIS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9882946,38.84231781 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T12:13:50.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3324 13TH STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02474409,38.96476938 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T10:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"804 RITTENHOUSE STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97881637,38.93484215 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:57:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1819 OTIS STREET NE",
+    "ZIPCODE":20018,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98992752,38.91255687 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T08:06:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"958 MOUNT OLIVET ROAD NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01021783,38.82885535 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"141 CHESAPEAKE STREET SW",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.93439979,38.87946521 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T15:44:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4632 HANNA PLACE SE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02631264,38.96067695 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:10:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"903 MISSOURI AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02298329,38.9544143 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:40:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"713 INGRAHAM STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01870407,38.90899815 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T08:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1409 5TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00079414,38.960244 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T12:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"509 NICHOLSON STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95750676,38.89564222 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T08:57:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"34TH STREET NE AND EADS STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02358021,38.88325757 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"500 L'ENFANT PLAZA SW",
+    "ZIPCODE":20024,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01812759,38.87952285 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"401 I STREET SW",
+    "ZIPCODE":20024,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01030783,38.86748164 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1824 HALF STREET SW",
+    "ZIPCODE":20024,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02820551,38.927884 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:02:14.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1119 COLUMBIA ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98679763,38.86775142 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:01:40.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1302 T STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04040625,38.92229382 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2462 ONTARIO ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01567589,38.94294031 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T09:57:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4226 3RD STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01605873,38.94237922 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T10:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"315 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03976465,38.91965929 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2238 ONTARIO ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00702797,38.90061293 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:57:48.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"810 1ST STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0154587,38.91006314 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:19:05.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1504 3RD STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01457444,38.94991502 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T14:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"208 EMERSON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02502869,38.96396371 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"815 QUACKENBOS STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98343711,38.88198021 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:32:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"600 KENTUCKY AVENUE SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.08671069,38.95518965 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4408 FARADAY PLACE NW",
+    "ZIPCODE":20016,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00639989,38.94788304 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T07:39:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4710 FORT TOTTEN DRIVE NE",
+    "ZIPCODE":20011,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0027434,38.91353711 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T11:25:17.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"220 RANDOLPH PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0246684,38.90945052 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"916 P STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98869986,38.89968419 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T08:18:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1250 LINDEN PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00751514,38.91794288 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T13:00:18.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"39 V STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02102232,38.94221205 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T10:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"619 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03996109,38.92861655 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1720 IRVING STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98452051,38.90469037 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T08:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1422 ORREN STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03335573,38.93368859 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:14:39.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1413 MERIDIAN PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97964086,38.89627519 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1730 E STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02944854,38.95812867 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T11:02:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1216 MADISON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00135206,38.89076446 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:56:48.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"317 A STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02624078,38.93974822 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T10:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"900  - 999 BLOCK OF SHEPHERD STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98343268,38.88071561 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T08:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"706 15TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98719859,38.89687757 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1324 EMERALD STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01242714,38.91389934 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T12:08:44.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1738 1ST STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02844662,38.91536336 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1206 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95725602,38.89298046 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:28:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"229 34TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03537153,38.96356423 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T23:44:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1444 ROCK CREEK FORD ROAD NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97643086,38.89532771 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T15:40:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"416 20TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99129591,38.9277816 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T08:18:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1022 HAMLIN STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02422044,38.9158214 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T09:11:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1904 9TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99288221,38.89215812 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:48:28.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"928 CONSTITUTION AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02473665,38.90912332 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T10:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1415 COLUMBIA STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98227187,38.8547469 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2426 15TH PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02741031,38.91131581 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T09:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1101 Q STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0061602,38.8334877 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T00:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3831 1ST STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00588778,38.83305104 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T00:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"MISSISSIPPI AVENUE SE AND 1ST STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0061602,38.8334877 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T00:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3831 1ST STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03171714,38.9336704 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T10:19:21.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1354 OAK STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02677726,38.91395314 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T09:00:51.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1749 11TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07629839,38.96528454 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T12:27:23.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5612 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20015,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07629839,38.96528454 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"5612 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20015,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97231935,38.87308322 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2330 NICHOLSON STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02300012,38.93936389 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3921 8TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98024514,38.90626934 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1231 16TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99693262,38.8797833 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T07:48:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"643 1/2 I STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99346443,38.93384883 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"900 NEWTON STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0154587,38.91006314 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:21:28.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1504 3RD STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02791599,38.91685131 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T11:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1118 U STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98489678,38.86731347 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1906 14TH STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.92529911,38.90198177 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T09:02:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5200 JAY STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03235463,38.91211376 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T11:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1622 14TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99030974,38.84384096 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T12:08:25.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3212 12TH STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00838078,38.91792895 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:03:52.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"15 V STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02432107,38.9427829 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T11:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"828 VARNUM STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03000513,38.93706888 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T11:42:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3708 13TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98043323,38.90273189 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:48:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1628 K STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00707647,38.91535445 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:59:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"49 T STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9835343,38.85383633 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:37:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3032 STANTON ROAD SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01631092,38.94302319 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T00:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"316 VARNUM STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.09702964,38.95021077 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:08:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4610 49TH STREET NW",
+    "ZIPCODE":20016,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04508533,38.91362465 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T10:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1724 20TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98377219,38.8538951 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3026 STANTON ROAD SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99602597,38.94152141 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T08:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4351 VARNUM PLACE NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02458917,38.91574232 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T09:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"913 T STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99120034,38.89666381 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:44:52.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1105 MARYLAND AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04250455,38.91469671 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T00:53:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1824 SWANN STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03469596,38.9659618 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T23:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1436 SHERIDAN STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02103685,38.94647216 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"545 BUCHANAN STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98027823,38.89626106 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1700 E STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98480465,38.868694 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T08:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1405 RIDGE PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0022961,38.91238676 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T08:10:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"239 R STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00800844,38.91284584 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:54:19.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"18 R STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9818214,38.89593647 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:13:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1609 E STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02682344,38.91716551 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:36:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2001 11TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05368733,38.90087519 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T11:36:21.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2503 I STREET NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01433662,38.91351627 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T11:50:57.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1708 2ND STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98456341,38.86843155 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T10:12:35.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1410 S STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01769048,38.94981812 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T11:00:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"400 EMERSON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98211205,38.9012892 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T15:09:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"845 BLADENSBURG ROAD NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95505144,38.89412712 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"314 36TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98598016,38.90838182 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1659 MONTELLO AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04213646,38.90683761 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T11:56:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1228 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20036,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02849496,38.90705829 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T13:53:06.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1200 N STREET NW",
+    "ZIPCODE":20005,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02396775,38.92528974 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-18T08:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"739 FAIRMONT STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9965581,38.92666961 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T08:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"650 GIRARD STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02149399,38.96746547 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"605 TUCKERMAN STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04202961,38.9139219 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1804 S STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00937211,38.92146167 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2400 NORTH CAPITOL STREET NW",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03750869,38.92454498 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T09:36:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1620 FULLER STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06618948,38.90610849 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3301 PROSPECT STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98590453,38.86868846 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:41:18.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1335 RIDGE PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0222612,38.93450081 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T10:18:06.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"700 OTIS PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04977442,38.90340602 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-14T00:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1 WASHINGTON CIRCLE NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04911201,38.90328271 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-14T00:00:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1009 NEW HAMPSHIRE AVENUE NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03279779,38.96338734 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T10:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1371 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0485807,38.90336085 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:52:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1099 22ND STREET NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0176494,38.95819617 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T10:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"336 MADISON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0324279,38.96345942 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T10:47:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1363 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98793215,38.89592663 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1307 E STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03926369,38.92335008 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:19:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1705 EUCLID STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03029858,38.89015455 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1300 MADISON DRIVE NW",
+    "ZIPCODE":20004,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01419541,38.87315103 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"215 O STREET SW",
+    "ZIPCODE":20024,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00109859,38.87583459 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1201 4TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03612376,38.91173268 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1611 16TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01367674,38.91352643 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T10:05:30.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"153 RANDOLPH PLACE NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98452011,38.86774538 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1404 T STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03098782,38.91577548 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1337 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02728014,38.95264118 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T09:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5121 GEORGIA AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04731679,38.91724945 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T13:11:02.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2016 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20008,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04230246,38.93168648 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T08:28:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1825 LAMONT STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03386346,38.92717139 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T11:49:20.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1438 COLUMBIA ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03944963,38.90134817 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"I STREET NW AND 17TH STREET NW",
+    "ZIPCODE":20006,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.93248457,38.87716914 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T09:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1163 46TH PLACE SE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99051935,38.90311374 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T14:41:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1130 FLORIDA AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02321606,38.95284564 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T00:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"732 HAMILTON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07626133,38.96504873 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:43:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3811 MCKINLEY STREET NW",
+    "ZIPCODE":20015,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0104587,38.91023107 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:48:35.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"38 BATES STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03939304,38.9120189 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T10:43:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1721 CORCORAN STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02863187,38.90546396 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T11:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1208 M STREET NW",
+    "ZIPCODE":20005,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.012351,38.9529199 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:02:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5120 NEW HAMPSHIRE AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98452051,38.90469037 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T15:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1422 ORREN STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04287479,38.9237132 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T10:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1786 LANIER PLACE NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07212428,38.91913951 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2216 HALL PLACE NW",
+    "ZIPCODE":20007,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0233026,38.95218316 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T12:47:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"731 GALLATIN STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04063849,38.92369706 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T07:32:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1752 COLUMBIA ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02415468,38.93954454 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:08:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"822 SHEPHERD STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0718316,38.91947246 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2225 HALL PLACE NW",
+    "ZIPCODE":20007,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9950471,38.85373505 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Voided",
+    "STREETADDRESS":"2720 MARTIN LUTHER KING JR AVENUE SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01567589,38.94294031 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T10:51:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4226 3RD STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98053125,38.89715537 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:36:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1661 ROSEDALE STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01933213,38.93125906 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:32:26.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"432 LAMONT STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00167538,38.91499495 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T11:03:16.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"306 SEATON PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03245686,38.93887321 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T11:12:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3903 14TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03718108,38.91795441 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T09:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1608 V STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02240761,38.93317467 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-18T10:08:51.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"613 PARK ROAD NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04439045,38.92501082 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T09:07:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1860 CLYDESDALE PLACE NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98108964,38.89459267 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1633 D STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01831301,38.95805915 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"403 MISSOURI AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02631264,38.96067695 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:36:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"903 MISSOURI AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97788983,38.93234254 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T07:34:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1916 LAWRENCE STREET NE",
+    "ZIPCODE":20018,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06479302,38.90897411 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T14:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3245 P STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00943301,38.91202012 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-19T09:43:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1626 NORTH CAPITOL STREET NW",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95725235,38.89430126 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"325 34TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01457444,38.94991502 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T12:18:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"208 EMERSON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04316465,38.91389149 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1739 19TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01092126,38.90707738 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-19T10:21:12.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"10 N STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0482066,38.90746702 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T00:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2139 N STREET NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04443221,38.90115618 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:59:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1920 I STREET NW",
+    "ZIPCODE":20006,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9834163,38.89614336 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"445 15TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02846728,38.93677514 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1036 QUEBEC PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02732472,38.9118229 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T11:11:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1618 11TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00589082,38.89363337 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:36:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1ST STREET NE AND C STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03389498,38.91535597 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T15:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1452 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06294435,38.9070104 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1305 WISCONSIN AVENUE NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02360852,38.96359917 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T11:19:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"728 QUACKENBOS STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03279779,38.96338734 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T10:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1371 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98489678,38.86731347 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:27:23.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1906 14TH STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02619565,38.96477528 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"900 RITTENHOUSE STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03105957,38.9094789 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T10:01:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1308 P STREET NW",
+    "ZIPCODE":20005,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99650835,38.9583296 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-22T00:25:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"644 KENSINGTON PLACE NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02581309,38.92766602 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T08:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2919 SHERMAN AVENUE NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03049717,38.91682463 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T09:08:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1314 U STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02879051,38.95602531 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T11:28:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1218 KENNEDY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98480465,38.868694 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:43:31.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1405 RIDGE PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0749959,38.96331293 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5502 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20015,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01294902,38.91646819 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T11:51:12.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"117 THOMAS STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98977657,38.90300657 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T14:39:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1111 MONTELLO AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00080081,38.89690953 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"534 4TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02942707,38.93322032 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T11:20:56.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3517 13TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02394757,38.96545183 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:26:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"6211 8TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02466998,38.93370624 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T07:17:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"719 NEWTON PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02643267,38.92842086 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:05:04.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3020 SHERMAN AVENUE NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06270395,38.91276245 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T10:35:35.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1681 31ST STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01866821,38.90944641 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T14:27:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1427 5TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01863462,38.94944187 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T13:39:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"435 DELAFIELD PLACE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00134959,38.96105312 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-19T11:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"341 OGLETHORPE STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04230246,38.93168648 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:57:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1825 LAMONT STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99662423,38.95747346 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-22T00:48:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"716 KENNEDY STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02503443,38.95105613 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:46:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"813 FARRAGUT STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00303894,38.91383699 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T08:13:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"205 S STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03135517,38.89501014 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T15:47:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1350 PENNSYLVANIA AVENUE NW",
+    "ZIPCODE":20004,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05700601,38.93089588 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2718 CORTLAND PLACE NW",
+    "ZIPCODE":20008,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02317252,38.91154589 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1612 8TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03395263,38.91535523 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T00:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1454 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04060483,38.92330034 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:07:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1757 EUCLID STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99693262,38.8797833 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:37:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"643 1/2 I STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01155928,38.9098227 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T11:17:53.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"77 P STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07647792,38.96580906 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:41:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5632 CONNECTICUT AVENUE NW",
+    "ZIPCODE":20015,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95212541,38.90058027 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T10:02:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"663 ANACOSTIA AVENUE NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99952246,38.87701113 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T07:52:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1100 - 1199 BLOCK OF 5TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99057988,38.8926526 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1131 PARK STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9521798,38.90061758 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"665 ANACOSTIA AVENUE NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9521798,38.90061758 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T15:45:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"665 ANACOSTIA AVENUE NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04747695,38.90805268 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T11:46:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2123 NEWPORT PLACE NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02120882,38.94289295 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T00:37:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"556 VARNUM STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98586249,38.90931786 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T08:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1708 MONTELLO AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00764779,38.92583849 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T08:12:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"23 GIRARD STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9768989,38.8489738 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1904 SAVANNAH PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02274991,38.95156737 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T11:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5021 7TH PLACE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0199771,38.92972952 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3114 WARDER STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07633478,38.92319833 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3814 DAVIS PLACE NW",
+    "ZIPCODE":20007,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99029397,38.84373737 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3216 12TH STREET SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98928154,38.90216524 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:45:40.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1207 FLORIDA AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01891383,38.93220077 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T10:50:18.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"435 LURAY PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02362293,38.96215947 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T11:45:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"721 ONEIDA PLACE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01806604,38.91091468 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"440 Q STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02675291,38.91636279 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T08:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1921 11TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.9942077,38.95035242 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"5030 SOUTH DAKOTA AVENUE NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02049141,38.94074578 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T00:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"536 TAYLOR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05789903,38.90562446 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-14T00:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1211 29TH STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03484151,38.91577593 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:55:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1503 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02946089,38.96845347 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T00:03:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"6421 13TH STREET NW",
+    "ZIPCODE":20012,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03848166,38.91558288 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T11:01:33.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"17TH STREET NW AND T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01087751,38.91279732 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"53 R STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05789903,38.90562446 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1211 29TH STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02023652,38.93555713 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T09:35:28.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"626 PRINCETON PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01093516,38.91279552 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"55 R STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99471075,38.88257294 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:37:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"500 8TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04073815,38.922916 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:22:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1750 EUCLID STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99139633,38.95199094 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T08:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5047 11TH STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03844368,38.93389179 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:53:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1650 NEWTON STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04296258,38.90915886 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T10:45:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"DUPONT CIRCLE NW AND CONNECTICUT AVENUE NW",
+    "ZIPCODE":20036,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02724716,38.93093796 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1017 LAMONT STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98981659,38.89968168 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:52:03.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1200 LINDEN PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0106408,38.90743396 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T11:06:16.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"33 N STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0218089,38.9328085 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:03:34.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"600 PARK ROAD NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02028602,38.93522273 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T09:34:31.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"625 OTIS PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0538779,38.9008842 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T11:35:16.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2509 I STREET NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99797928,38.89329067 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:51:18.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"606 MASSACHUSETTS AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07209238,38.91427917 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T10:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3624 S STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02724418,38.9554469 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:47:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5402 ILLINOIS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00250968,38.91353712 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:56:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"228 RANDOLPH PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00266247,38.9138697 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:54:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"219 S STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00250727,38.91386277 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:52:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"229 S STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00256814,38.91353712 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T07:55:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"226 RANDOLPH PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03971347,38.91720958 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T08:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1735 U STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02626757,38.95484555 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T10:30:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"5323 ILLINOIS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02549742,38.93664647 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3724 9TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02549244,38.93659413 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T10:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3722 9TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07319274,38.9182099 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:31:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2056 37TH STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.92646541,38.90403119 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T10:10:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1014 51ST STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95585926,38.89023472 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"10 35TH STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01811366,38.91091675 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"442 Q STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.94045801,38.90979702 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-26T11:50:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4350 POLK STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03019083,38.91390286 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T11:28:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1310 S STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04405128,38.91455336 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T14:36:34.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1809 REAR 20TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03877137,38.92352879 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T11:13:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2511 17TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0129393,38.90485211 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:36:10.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"105 PIERCE STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00148105,38.88555969 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"314 NORTH CAROLINA AVENUE SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02067571,38.94940946 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T10:17:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4828 KANSAS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98099754,38.88895755 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T13:02:05.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"31 17TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03378994,38.91535609 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-27T00:10:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1448 T STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98928154,38.90216524 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-16T08:59:34.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1207 FLORIDA AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01689501,38.94233379 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T11:34:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"4203 4TH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0348097,38.91745509 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T00:18:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2012 15TH STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.97068026,38.89762841 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2519 BENNING ROAD NE",
+    "ZIPCODE":20002,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02432854,38.89707374 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-11T21:59:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"900 F STREET NW",
+    "ZIPCODE":20004,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99322788,38.92155301 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2401 WASHINGTON PLACE NE",
+    "ZIPCODE":20018,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02284276,38.94753146 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"34 SHERMAN CIRCLE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02727015,38.93887913 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T00:33:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"965 RANDOLPH STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06884074,38.90802844 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1405 35TH STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95606822,38.89006626 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3428 EAST CAPITOL STREET NE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03135517,38.89501014 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1350 PENNSYLVANIA AVENUE NW",
+    "ZIPCODE":20004,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99750944,38.88653582 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:34:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"625 NORTH CAROLINA AVENUE SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98103841,38.88911998 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"23 17TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02618797,38.90711928 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-02T11:00:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1000 N STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99724123,38.95499702 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"546 INGRAHAM STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02852277,38.92699796 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T08:51:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1205 HARVARD STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02014258,38.96764101 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:56:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"6406 5TH STREET NW",
+    "ZIPCODE":20012,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03198987,38.95209093 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T22:47:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1329 GALLATIN STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0246107,38.93371472 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-18T08:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"717 NEWTON PLACE NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01873414,38.95414742 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"426 INGRAHAM STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99637739,38.9266715 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2900 7TH STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98227187,38.8547469 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2426 15TH PLACE SE",
+    "ZIPCODE":20020,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02427541,38.92420769 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T15:38:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"819 EUCLID STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0352284,38.91095202 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T13:12:19.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1512 Q STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00134959,38.96105312 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"341 OGLETHORPE STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00988053,38.91388967 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-04T10:23:54.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"20 S STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03718108,38.91795441 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T14:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1608 V STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98663111,38.88507725 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"307 KENTUCKY AVENUE SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01605873,38.94237922 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T09:46:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"315 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01618388,38.94237542 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T11:11:34.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"319 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01618388,38.94237542 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-20T11:00:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"319 UPSHUR STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99886208,38.94729272 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"4719 6TH STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07248894,38.91373275 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T11:10:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3641 R STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03243008,38.93555438 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T09:34:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3521 14TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04509381,38.90752384 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T00:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1303 NEW HAMPSHIRE AVENUE NW",
+    "ZIPCODE":20036,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02364641,38.91537263 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T08:21:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1851 9TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03279779,38.96338734 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T10:15:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1371 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0324279,38.96345942 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-06T10:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1363 PEABODY STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99399739,38.93671242 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3746 10TH STREET NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00398618,38.91832807 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"155 RHODE ISLAND AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01639089,38.95521111 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"5324 KANSAS AVENUE NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95539349,38.88705675 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3532 MINNESOTA AVENUE SE",
+    "ZIPCODE":20019,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00153011,38.91576409 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"310 T STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98038112,38.89810626 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1649 GALES STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.06261008,38.90696743 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T11:05:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"3139 N STREET NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99419529,38.93703718 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"921 PERRY PLACE NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02396979,38.92619049 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"733 GIRARD STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03135517,38.89501014 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1350 PENNSYLVANIA AVENUE NW",
+    "ZIPCODE":20004,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02294586,38.91483786 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-05T08:14:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1800 - 1899 BLOCK OF 8TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04587182,38.92258052 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T09:29:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1935 BILTMORE STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01863569,38.92971326 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"427 IRVING STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02936877,38.91097986 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-13T13:20:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1204 Q STREET NW",
+    "ZIPCODE":20009,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02648455,38.92463367 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1026 FAIRMONT STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.03000513,38.93706888 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3708 13TH STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00817092,38.91499288 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T12:53:42.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"22 SEATON PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.95255113,38.8638663 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2033 38TH STREET SE",
+    "ZIPCODE":20020,
+    "WARD":"7"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98248043,38.89357908 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"304 16TH STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02061808,38.95517909 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-10T09:49:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"516 JEFFERSON STREET NW",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.04813015,38.90744462 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T11:58:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2137 N STREET NW",
+    "ZIPCODE":20037,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07957656,38.94337847 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"4013 VAN NESS STREET NW",
+    "ZIPCODE":20016,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99643958,38.88905003 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"21 7TH STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02380418,38.92790381 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T10:04:36.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"724 COLUMBIA ROAD NW",
+    "ZIPCODE":20001,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98518271,38.89981559 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:35:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1400 MARYLAND AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0423601,38.92038192 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T08:12:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1806 BELMONT ROAD NW",
+    "ZIPCODE":20009,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00182836,38.90489678 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1149 3RD STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.05128313,38.92481693 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-24T15:23:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"2638 WOODLEY PLACE NW",
+    "ZIPCODE":20008,
+    "WARD":"3"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.02219918,38.92978623 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-12T11:22:43.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"630 KENYON STREET NW",
+    "ZIPCODE":20010,
+    "WARD":"1"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99425952,38.90427147 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:16:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"829 FLORIDA AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.99435637,38.95075363 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-03T07:55:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"8TH STREET NE AND SOUTH DAKOTA AVENUE NE",
+    "ZIPCODE":20017,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00231575,38.88541923 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T09:17:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"319 3RD STREET SE",
+    "ZIPCODE":20003,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01479764,38.91422652 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T11:59:57.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"211 S STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00000898,38.96103069 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"529 OGLETHORPE STREET NE",
+    "ZIPCODE":20011,
+    "WARD":"4"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.01333312,38.91963827 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"2215 FLAGLER PLACE NW",
+    "ZIPCODE":20001,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.0186682,38.9093965 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-03-09T15:05:35.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1425 5TH STREET NW",
+    "ZIPCODE":20001,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.007613,38.91758119 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-21T12:56:17.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"42 RHODE ISLAND AVENUE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98060055,38.89791451 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-25T08:24:00.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1668 KRAMER STREET NE",
+    "ZIPCODE":20002,
+    "WARD":"6"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.07588118,38.91286156 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"3950 GEORGETOWN COURT NW",
+    "ZIPCODE":20007,
+    "WARD":"2"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -76.98927692,38.84396591 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T10:40:38.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"1224 SAVANNAH PLACE SE",
+    "ZIPCODE":20032,
+    "WARD":"8"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00832647,38.91203678 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"2020-02-28T12:18:43.000Z",
+    "SERVICEORDERSTATUS":"Closed",
+    "STREETADDRESS":"10 QUINCY PLACE NE",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -77.00939435,38.91173969 ]
+    },
+    "properties": {
+    "INSPECTIONDATE":"",
+    "SERVICEORDERSTATUS":"Open",
+    "STREETADDRESS":"1620 NORTH CAPITOL STREET NW",
+    "ZIPCODE":20002,
+    "WARD":"5"
+    }
+  }
+]
 };
 
+// add markers to map
+geojson.features.forEach(function(marker) {
+
+  // create a HTML element for each feature
+  var el = document.createElement('div');
+  el.className = 'marker';
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el)
+    .setLngLat(marker.geometry.coordinates)
+    .addTo(map);
+});
 
 </script>
 
