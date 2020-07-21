@@ -9,18 +9,18 @@
 ## Goals
 
 - Build a database of rodent inspection and treatment in D.C. 
-- Produce a heat map, using some opensource map library
+- Produce a heat map, using some opensource/public/free map library
 - Integrate tools to take screenshots, track past events and hold authorities accountable. 
 
 ## Description 
 
 This project makes use of DC's Rodent Inspection and Treatment in Last 30 Days dataset, which can be found here: https://opendata.dc.gov/datasets/rodent-inspection-and-treatment-in-last-30-days. 
 
-It creates a map using Mapbox (https://www.mapbox.com) and assigns points to geospatial coordinates in the earlier saved datasets. 
+It creates a map using Mapbox (https://www.mapbox.com) and assigns points to geospatial coordinates in the earlier saved datasets. The data is downloaded in CSV format, cleaned and then converted to GeoJSON for easier use of Mapbox's JS/Web libraries. 
 
-The site also has a suite of tools to accompany the dataset, to faciliate communication with local officials and encourage civic engagement around rodents. 
+The site should also eventually have a suite of tools to accompany the dataset, to faciliate communication with local officials and encourage civic engagement around rodents. 
 
-Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. Currently, this is done by Paul-Emmanuel.
+Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. Currently, this is done by Paul-Emmanuel, though there are plans to use the API instead. 
 
 ## Measuring_Progress
 
