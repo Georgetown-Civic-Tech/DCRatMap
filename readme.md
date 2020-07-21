@@ -25,4 +25,4 @@ It creates a map using Mapbox (https://www.mapbox.com) and assigns points to geo
 
 The site should also eventually have a suite of tools to accompany the dataset, to faciliate communication with local officials and encourage civic engagement around rodents. 
 
-Once a month, someone needs to pull the data, update the database and ensure the visuals are updated. Currently, this is done by Paul-Emmanuel, though there are plans to use the API instead. 
+Once a month, I pull the data in CSV format, simplify it and convert it to GeoJSON and update the HTML. This, in turn, builds a new version of the map. 
