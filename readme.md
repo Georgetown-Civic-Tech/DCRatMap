@@ -2,7 +2,7 @@
 ## Version 1.0
 
 - [Goals](#goals)
-- [Appplication View](#Application_View)
+- [Appplication_View](#Application_View)
 - [Description](#description)
 
 ## Goals
