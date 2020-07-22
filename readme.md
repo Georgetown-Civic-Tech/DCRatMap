@@ -2,9 +2,8 @@
 ## Version 1.0
 
 - [Goals](#goals)
+- [Appplication View](#Application view)
 - [Description](#description)
-- [Measuring_Progress](#measuring_progress)
-- [Acknowledgements](#acknowledgements)
 
 ## Goals
 
