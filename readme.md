@@ -2,7 +2,7 @@
 ## Version 1.0
 
 - [Goals](#goals)
-- [Appplication_View](#Application_View)
+- [Application_View](#Application_View)
 - [Description](#description)
 
 ## Goals
@@ -11,7 +11,7 @@
 - Produce a map of rodent events, using some opensource/public/free map library.
 - Allow for full map control with zoom, 360 control. 
 
-## Appplication_View
+## Application_View
 
 ![Image of Rat Map](DCRatMap_Photo1.png)
 ![Image of Rat Map](DCRatMap_Photo3.png)
